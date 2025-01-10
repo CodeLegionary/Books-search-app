@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #DCCBA4, #EDE0C8, #DCCBA4); /* Gradiente magnolia con sfumature legno */
+    
+}
+
+body {
+    transform: translate3d(0,0,0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    color:rgb(0, 80, 53)
+}
+
+h2 {
+    color:rgb(11, 0, 80);
+    cursor: help;
+}
+.border {
+    padding: 1rem;
+}
+
+main {
+    height: auto;
+    background: radial-gradient(ellipse 95% 120%, aliceblue, #f5fede, #ffe668);
+    margin: 0 auto; /* Centra orizzontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+p {
+    margin: 10px
+}
+
+#searchBar, searchButton {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 100%;
+    margin: 1rem auto;
+    box-sizing: border-box
+}
+
+#results {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
