@@ -26,6 +26,6 @@ N.B. Il genere ricercato può essere inserito in più lingue. Inoltre, il langua
 # IV Utilizzo
 Le funzionalità sono quelle standard che simulano un motore di ricerca. La ricerca può essere avviata premendo l'apposito pulsante, o schiacciando il tasto 'Enter'.
 Trovato il genere, si può accedere alla ricerca di un libro specifico sfogliando la lista. La search bar contiene dei nomi esemplificativi, ma in caso di selezione di un genere non esistente il browser avviserà l'utente, invitandolo a cercare di nuovo!
-Inoltre una volta apparsa la lista dei libri, cliccando su un titolo è possibile avere una panoramica che ci aiuterà a decidere la lettura migliore!
+Inoltre, una volta apparsa la lista dei libri, cliccando su un titolo è possibile visualizzare una descrizione dettagliata che ci aiuterà a decidere la lettura migliore!
 
 P.S. Il sito ha uno styling minimale che rappresenta proprio una pergamena che si apre come per magia... al variare di un pezzo del contenuto, la pergamena si richiuderà all'istante ..per poi riaprirsi.
