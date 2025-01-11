@@ -2,7 +2,7 @@
 
 ## Descrizione
 Questo progetto è una web app che interagisce con l'utente attraverso la manipolazione del DOM.
-Il progetto sfrutta le API di Open Library per fornire i titoli e gli autori, e la descrizione di un singolo libro su richiesta.
+Il progetto sfrutta le API di Open Library per fornire una lista di libri, e la descrizione di un singolo libro su richiesta.
 
 ## Indice
 1. ## Struttura
@@ -20,6 +20,8 @@ Il deployment sopramenzionato è stato realizzato tramite Netlify, con apposita 
 
 # III Lingue
 Il testo - come si evince dal sito - è pensato per un pubblico italiano, ma prevede l'opzione per selezionare la lingua inglese. Nei fatti l'italiano è la lingua preimpostata, e l'inglese è integrato in maniera dinamica grazie al file translation.js. Inoltre le descrizioni delle opere e i titoli dei libri rimangono fedeli al sito Open Library, e sono riportati anche in lingua originale (e.g. francese).
+
+N.B. il genere ricercato può essere inserito in più lingue.
 
 # IV Utilizzo
 Le funzionalità sono quelle standard che simulano un motore di ricerca.
