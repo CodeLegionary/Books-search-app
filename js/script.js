@@ -7,12 +7,14 @@ document.getElementById('searchBar').addEventListener('keydown', function(event)
 
 function searchBooks() {
     const results = document.getElementById('results');
-    const genere = document.getElementById('searchBar').value.trim();
+    let genere = document.getElementById('searchBar').value.trim();
 
 if (!genere) {
     alert('Per favore, inserisci un genere.');
     return;
 }
+
+    genere= genere.toLowerCase();
 
     results.innerHTML = 'caricamento...&#x23F3;';
     fetch(`https://openlibrary.org/subjects/${genere}.json`)
