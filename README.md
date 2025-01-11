@@ -1,4 +1,4 @@
-# Counter README
+# Web-app README
 
 ## Descrizione
 Questo progetto è una web app che interagisce con l'utente attraverso la manipolazione del DOM.
