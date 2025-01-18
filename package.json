@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/CodeLegionary/Books-search-app#readme",
   "devDependencies": {
+    "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "babel-loader": "^8.0.0",
     "css-loader": "^6.11.0",
