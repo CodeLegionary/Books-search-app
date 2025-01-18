@@ -1,0 +1,38 @@
+{
+  "name": "books-search-app",
+  "version": "1.0.0",
+  "description": "un catalogo di libri ricerccabili per genere e cliccabili per maggiori info",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "node-sass ./css/style.css -o ./dist/styles",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeLegionary/Books-search-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeLegionary/Books-search-app/issues"
+  },
+  "homepage": "https://github.com/CodeLegionary/Books-search-app#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^8.0.0",
+    "css-loader": "^6.11.0",
+    "dotenv-webpack": "^8.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.11",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0"
+  }
+}

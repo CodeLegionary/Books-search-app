@@ -17,6 +17,7 @@ Trattasi di una SPA (Single-Page-Application) che interagisce con un secondo sit
 Il sito è disponibile al seguente link: [Books-search](https://books-search-papyrus.netlify.app/).
 Il deployment sopramenzionato è stato realizzato tramite Netlify, con apposita customization del dominio. Un'ulteriore versione
 è disponibile su [Pages](https://codelegionary.github.io/Books-search-app/).
+Inoltre il file process.env non è incluso nel .gitignore poichè non contiene dati sensibili, nè tantomeno ne conterrà in futuro. Infatti la sua unica funzione è quella di ottimizzare il sito in fase di deployment.
 
 # III Lingue
 Il testo del sito è pensato principalmente per un pubblico italiano, ma offre l'opzione di selezionare la lingua inglese. L'italiano è la lingua predefinita, mentre l'inglese è integrato dinamicamente tramite il language selector e il file translation.js. Le descrizioni delle opere e i titoli dei libri rimangono fedeli al sito Open Library, e sono riportati anche in lingua originale (e.g. francese).

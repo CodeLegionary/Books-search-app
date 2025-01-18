@@ -1,4 +1,4 @@
-const translations = {
+export const translations = {
     it: {
         "title": "Trova la prossima lettura!",
         "description": "Scrivi un genere &#x1f9f4;&#128396; ... e premi il bottone per srotolare la pergamena! &#x1FA84; &#129718;",

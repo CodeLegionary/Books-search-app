@@ -1,3 +1,9 @@
+import '../css/style.css';
+import '../img/book.svg';
+import { translations } from './translation.js';
+
+const SITO = process.env.API_BASE_URL;
+
 let language = 'it';
 
 document.getElementById('searchButton').addEventListener('click', searchBooks);
@@ -9,6 +15,9 @@ document.getElementById('searchBar').addEventListener('keydown', function(event)
 document.getElementById('languageSelector').addEventListener('change', function() {
     language = this.value;
     loadTranslations(language);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    createFavicon('FAVICON_URL');
 });
 
 function loadTranslations(language) {
@@ -40,7 +49,7 @@ if (!genere) {
     genere= genere.toLowerCase();
 
     results.innerHTML = translations[language].loading;
-    fetch(`https://openlibrary.org/subjects/${genere}.json`)
+    fetch(`${SITO}/subjects/${genere}.json`)
     .then(response => response.json())
     .then(data => {
         if (!(data.works && data.works.length > 0)) {
@@ -60,7 +69,7 @@ if (!genere) {
 }
 
 function getBookDescription(key) {
-    fetch(`https://openlibrary.org${key}.json`)
+    fetch(`${SITO}${key}.json`)
     .then(response => response.json())
     .then(data => {
         const description = data.description ?
@@ -72,5 +81,7 @@ function getBookDescription(key) {
         console.error('Errore:', error);
     });
 }
+
+window.getBookDescription = getBookDescription;
 
 loadTranslations('it');
