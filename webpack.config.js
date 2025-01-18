@@ -2,6 +2,7 @@ const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './js/script.js',
@@ -44,11 +45,22 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
+            filename: 'index.html',
+            inject: 'body'
         }),
         new Dotenv({
             path: './process.env',
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'img', to: 'img' },
+                { from: 'css', to: 'css' },
+            ],
+        }),
     ],
+    resolve: {
+        extensions: ['.js', '.json'],
+    },
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist'),
