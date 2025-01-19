@@ -3,4 +3,9 @@
   command = "npm run build"
   
 [context.production.environment]
-NODE_VERSION = "22.0.0"
+NODE_VERSION = "22.0.0"ù
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
