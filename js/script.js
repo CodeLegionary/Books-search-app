@@ -3,7 +3,7 @@ import '../img/book.svg';
 import { translations } from './translation.js';
 
 /////////////////////
-import { basePath } from '/config.js';
+import { basePath } from '../config.js';
 
 // Utilizzo di basePath per i percorsi delle risorse
 const styleLink = document.createElement('link');
