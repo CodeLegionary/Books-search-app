@@ -55,6 +55,7 @@ module.exports = {
             patterns: [
                 { from: 'img', to: 'img' },
                 { from: 'css', to: 'css' },
+                { from: 'js', to: 'js' },
             ],
         }),
     ],
