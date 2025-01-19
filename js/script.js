@@ -8,20 +8,20 @@ import { basePath } from '../config.js';
 // Utilizzo di basePath per i percorsi delle risorse
 const styleLink = document.createElement('link');
 styleLink.rel = 'stylesheet';
-styleLink.href = `${basePath}/css/style.css`;
+styleLink.href = `${basePath}css/style.css`;
 document.head.appendChild(styleLink);
 
 /*const translationScript = document.createElement('script');
-translationScript.src = `${basePath}/js/translation.js`;
+translationScript.src = `${basePath}js/translation.js`;
 document.body.appendChild(translationScript);
 
 const mainScript = document.createElement('script');
 mainScript.type = 'module';
-mainScript.src = `${basePath}/js/script.js`;
+mainScript.src = `${basePath}js/script.js`;
 document.body.appendChild(mainScript);*/
 
 const bundleScript = document.createElement('script');
-bundleScript.src = `${basePath}/js/bundle.js`;
+bundleScript.src = `${basePath}js/bundle.js`;
 document.body.appendChild(bundleScript);
 //////////////////////
 

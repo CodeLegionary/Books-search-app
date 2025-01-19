@@ -1,2 +1,2 @@
 const isProduction = process.env.NODE_ENV === 'production';
-export const basePath = isProduction ? '/dist' : '/';
+export const basePath = isProduction ? '/dist/' : '/';
