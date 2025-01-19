@@ -2,46 +2,28 @@ import '../css/style.css';
 import '../img/book.svg';
 import { translations } from './translation.js';
 
-/////////////////////
-//import { basePath } from '../config.js';
-
-// Utilizzo di basePath per i percorsi delle risorse
-//const styleLink = document.createElement('link');
-//styleLink.rel = 'stylesheet';
-//styleLink.href = dist/css/style.css;
-//document.head.appendChild(styleLink);
-
-/*const translationScript = document.createElement('script');
-translationScript.src = `${basePath}js/translation.js`;
-document.body.appendChild(translationScript);
-
-const mainScript = document.createElement('script');
-mainScript.type = 'module';
-mainScript.src = `${basePath}js/script.js`;
-document.body.appendChild(mainScript);*/
-
-//const bundleScript = document.createElement('script');
-//bundleScript.src = `${basePath}js/bundle.js`;
-//document.body.appendChild(bundleScript);
-//////////////////////
-
 const SITO = process.env.API_BASE_URL;
-
 let language = 'it';
 
+/////////////////////
+
 document.getElementById('searchButton').addEventListener('click', searchBooks);
+
 document.getElementById('searchBar').addEventListener('keydown', function(event) {
     if (event.key === 'Enter')
         searchBooks();
 
 });
+
 document.getElementById('languageSelector').addEventListener('change', function() {
     language = this.value;
     loadTranslations(language);
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     createFavicon('FAVICON_URL');
 });
+
 
 function loadTranslations(language) {
     const data = translations[language];
@@ -91,6 +73,7 @@ if (!genere) {
     });
 }
 
+
 function getBookDescription(key) {
     fetch(`${SITO}${key}.json`)
     .then(response => response.json())
@@ -105,6 +88,8 @@ function getBookDescription(key) {
     });
 }
 
+
 window.getBookDescription = getBookDescription;
+
 
 loadTranslations('it');
