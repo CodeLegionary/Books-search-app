@@ -1,9 +1,9 @@
 [build]
   publish = "dist"
-  command = "npm run build"
+  command = "npm install && npm run build"
   
 [context.production.environment]
-NODE_VERSION = "22.0.0"ù
+NODE_VERSION = "22.13.0"
 
 [[redirects]]
 from = "/*"
