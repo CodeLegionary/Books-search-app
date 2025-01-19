@@ -3,13 +3,13 @@ import '../img/book.svg';
 import { translations } from './translation.js';
 
 /////////////////////
-import { basePath } from '../config.js';
+//import { basePath } from '../config.js';
 
 // Utilizzo di basePath per i percorsi delle risorse
-const styleLink = document.createElement('link');
-styleLink.rel = 'stylesheet';
-styleLink.href = `${basePath}css/style.css`;
-document.head.appendChild(styleLink);
+//const styleLink = document.createElement('link');
+//styleLink.rel = 'stylesheet';
+//styleLink.href = dist/css/style.css;
+//document.head.appendChild(styleLink);
 
 /*const translationScript = document.createElement('script');
 translationScript.src = `${basePath}js/translation.js`;
@@ -20,9 +20,9 @@ mainScript.type = 'module';
 mainScript.src = `${basePath}js/script.js`;
 document.body.appendChild(mainScript);*/
 
-const bundleScript = document.createElement('script');
-bundleScript.src = `${basePath}js/bundle.js`;
-document.body.appendChild(bundleScript);
+//const bundleScript = document.createElement('script');
+//bundleScript.src = `${basePath}js/bundle.js`;
+//document.body.appendChild(bundleScript);
 //////////////////////
 
 const SITO = process.env.API_BASE_URL;
